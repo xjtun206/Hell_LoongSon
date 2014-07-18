@@ -321,4 +321,12 @@ void board_init()
 			BOARD_INFO,
 			SOFTWARE_VER);
 
+	/* 上电后lcd屏幕全显 */
+	PMU_SecToken = PMU_SecToken_chipctrl;
+	PMU_ChipCtrl &= ~(1<<9);
+	PMU_SecToken = PMU_SecToken_chipctrl;
+	PMU_ChipCtrl |= (1<<8);
+	LCD_FB_0 = 0xffffffff;
+	LCD_FB_1 = 0xffffffff;
+	LCD_FB_2 = 0xffffffff;
 }
