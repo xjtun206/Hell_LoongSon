@@ -1,0 +1,935 @@
+Archive member included because of file (symbol)
+
+.\libuser.a(sysinit.o)        main.o (sys_init)
+.\libuser.a(board.o)          .\libuser.a(sysinit.o) (ls1d_timer_process)
+lib/\lib1dtest.a(Calendar.o)  .\libuser.a(sysinit.o) (Calendar_Init)
+lib/\lib1dtest.a(lcd-test.o)  .\libuser.a(sysinit.o) (lcd_print)
+lib/\lib1dtest.a(cmd.o)       lib/\lib1dtest.a(lcd-test.o) (disable_timer)
+lib/\lib1dtest.a(i2c-test.o)  lib/\lib1dtest.a(cmd.o) (IIC_test_cycle)
+lib/\lib1dtest.a(exint.o)     .\libuser.a(sysinit.o) (ls1d_exint_test)
+lib/\lib1dtest.a(cmdline.o)   main.o (cmdline)
+lib/\lib1dtest.a(batfail.o)   .\libuser.a(sysinit.o) (ls1d_batfail_test)
+lib/\lib1dtest.a(tdc-test.o)  lib/\lib1dtest.a(cmdline.o) (tdc_test)
+lib/\lib1dfunc.a(temp_flow.o)
+                              .\libuser.a(board.o) (time_to_temp)
+lib/\lib1dfunc.a(adc.o)       .\libuser.a(sysinit.o) (ls1d_ADC_MEASURE)
+lib/\lib1dfunc.a(I2C.o)       .\libuser.a(sysinit.o) (ls1d_IIC_master_init)
+lib/\lib1dfunc.a(isp.o)       lib/\lib1dtest.a(cmdline.o) (tgt_putchar)
+lib/\lib1dfunc.a(tdc.o)       .\libuser.a(sysinit.o) (ls1d_InitTdc)
+lib/\lib1dfunc.a(key.o)       .\libuser.a(sysinit.o) (ls1d_key_open)
+lib/\lib1dfunc.a(flash.o)     .\libuser.a(sysinit.o) (Flash_Erase)
+lib/\lib1dfunc.a(Interrupt.o)
+                              start.o (IRQ_Exception)
+lib/\lib1dfunc.a(sleep.o)     .\libuser.a(sysinit.o) (ls1d_sleep)
+lib/\lib1dfunc.a(flash-sf.o)  .\libuser.a(sysinit.o) (ls1d_flash_boundary)
+lib/\lib1dfunc.a(uart.o)      .\libuser.a(board.o) (Uart1_2400B)
+lib/\lib1dfunc.a(lcd.o)       .\libuser.a(sysinit.o) (ls1d_lcd_poweron)
+lib/\lib1dfunc.a(public.o)    .\libuser.a(board.o) (printf_float)
+lib/\lib1dfunc.a(watchdog.o)  .\libuser.a(sysinit.o) (ls1d_wdt_set)
+lib/\libtinyc.a(memset.o)     .\libuser.a(sysinit.o) (memset)
+lib/\libtinyc.a(memcpy.o)     lib/\lib1dtest.a(Calendar.o) (memcpy)
+lib/\libtinyc.a(puts.o)       main.o (puts)
+lib/\libtinyc.a(strcmp.o)     lib/\lib1dtest.a(cmd.o) (strcmp)
+lib/\libtinyc.a(printf.o)     .\libuser.a(sysinit.o) (printf)
+lib/\libtinyc.a(putchar.o)    lib/\libtinyc.a(puts.o) (putchar)
+lib/\libtinyc.a(printbase.o)  lib/\libtinyc.a(printf.o) (printbase)
+
+Allocating common symbols
+Common symbol       size              file
+
+TEST                0x120             main.o
+DEBUG               0x4               .\libuser.a(sysinit.o)
+LS1D                0x108             main.o
+
+Discarded input sections
+
+ .reginfo       0x0000000000000000        0x0 main.o
+ .reginfo       0x0000000000000000        0x0 .\libuser.a(sysinit.o)
+ .reginfo       0x0000000000000000        0x0 .\libuser.a(board.o)
+ .reginfo       0x0000000000000000        0x0 lib/\lib1dtest.a(Calendar.o)
+ .reginfo       0x0000000000000000        0x0 lib/\lib1dtest.a(lcd-test.o)
+ .reginfo       0x0000000000000000        0x0 lib/\lib1dtest.a(cmd.o)
+ .reginfo       0x0000000000000000        0x0 lib/\lib1dtest.a(i2c-test.o)
+ .reginfo       0x0000000000000000        0x0 lib/\lib1dtest.a(exint.o)
+ .reginfo       0x0000000000000000        0x0 lib/\lib1dtest.a(cmdline.o)
+ .reginfo       0x0000000000000000        0x0 lib/\lib1dtest.a(batfail.o)
+ .reginfo       0x0000000000000000        0x0 lib/\lib1dtest.a(tdc-test.o)
+ .reginfo       0x0000000000000000        0x0 lib/\lib1dfunc.a(temp_flow.o)
+ .reginfo       0x0000000000000000        0x0 lib/\lib1dfunc.a(adc.o)
+ .reginfo       0x0000000000000000        0x0 lib/\lib1dfunc.a(I2C.o)
+ .reginfo       0x0000000000000000        0x0 lib/\lib1dfunc.a(isp.o)
+ .reginfo       0x0000000000000000        0x0 lib/\lib1dfunc.a(tdc.o)
+ .reginfo       0x0000000000000000        0x0 lib/\lib1dfunc.a(key.o)
+ .reginfo       0x0000000000000000        0x0 lib/\lib1dfunc.a(flash.o)
+ .reginfo       0x0000000000000000        0x0 lib/\lib1dfunc.a(Interrupt.o)
+ .reginfo       0x0000000000000000        0x0 lib/\lib1dfunc.a(sleep.o)
+ .reginfo       0x0000000000000000        0x0 lib/\lib1dfunc.a(flash-sf.o)
+ .reginfo       0x0000000000000000        0x0 lib/\lib1dfunc.a(uart.o)
+ .reginfo       0x0000000000000000        0x0 lib/\lib1dfunc.a(lcd.o)
+ .reginfo       0x0000000000000000        0x0 lib/\lib1dfunc.a(public.o)
+ .reginfo       0x0000000000000000        0x0 lib/\lib1dfunc.a(watchdog.o)
+ .reginfo       0x0000000000000000        0x0 lib/\libtinyc.a(memset.o)
+ .reginfo       0x0000000000000000        0x0 lib/\libtinyc.a(memcpy.o)
+ .reginfo       0x0000000000000000        0x0 lib/\libtinyc.a(puts.o)
+ .reginfo       0x0000000000000000        0x0 lib/\libtinyc.a(strcmp.o)
+ .reginfo       0x0000000000000000        0x0 lib/\libtinyc.a(printf.o)
+ .reginfo       0x0000000000000000        0x0 lib/\libtinyc.a(putchar.o)
+ .reginfo       0x0000000000000000        0x0 lib/\libtinyc.a(printbase.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000000000000                . = ALIGN (0x4)
+
+.text           0x00000000bfc00000     0xc400
+ *(.text)
+ .text          0x00000000bfc00000      0x600 start.o
+                0x00000000bfc00000                _start
+ .text          0x00000000bfc00600       0xd0 main.o
+                0x00000000bfc00600                main
+ .text          0x00000000bfc006d0      0x550 .\libuser.a(sysinit.o)
+                0x00000000bfc006d0                sys_init
+ .text          0x00000000bfc00c20     0x1140 .\libuser.a(board.o)
+                0x00000000bfc01830                ls1d_key_delay
+                0x00000000bfc01a58                ls1d_infrared_init
+                0x00000000bfc01440                ls1d_tdc_print
+                0x00000000bfc01b40                ls1d_infrared_disable
+                0x00000000bfc013c0                ls1d_Lcd_Init
+                0x00000000bfc01924                ls1d_adc_init
+                0x00000000bfc0105c                ls1d_scheduler
+                0x00000000bfc019fc                ls1d_adc_disable
+                0x00000000bfc01c70                board_init
+                0x00000000bfc01bc8                ls1d_infrared_process
+                0x00000000bfc00c60                ls1d_waker_process
+                0x00000000bfc00ca0                ls1d_softint_process
+                0x00000000bfc00c20                ls1d_timer_process
+                0x00000000bfc00ce0                user_task
+ .text          0x00000000bfc01d60      0x760 lib/\lib1dtest.a(Calendar.o)
+                0x00000000bfc02310                Rtc_Init
+                0x00000000bfc02358                Rtc_Modify
+                0x00000000bfc01e2c                Rtc_Refresh
+                0x00000000bfc02418                Calendar_print
+                0x00000000bfc023a4                Calendar_Init
+ .text          0x00000000bfc024c0      0x660 lib/\lib1dtest.a(lcd-test.o)
+                0x00000000bfc028b8                lcd_print
+ .text          0x00000000bfc02b20     0x2210 lib/\lib1dtest.a(cmd.o)
+                0x00000000bfc036dc                lcd_test
+                0x00000000bfc04134                flash_test
+                0x00000000bfc03998                key_test
+                0x00000000bfc02b20                do_d1
+                0x00000000bfc03030                debug_level
+                0x00000000bfc035a4                wdt_test
+                0x00000000bfc037ac                float_test
+                0x00000000bfc02ccc                do_d4
+                0x00000000bfc030e8                timer_test
+                0x00000000bfc02f58                do_m4
+                0x00000000bfc047c4                exint_test
+                0x00000000bfc031dc                do_sleep
+                0x00000000bfc02e80                do_m1
+                0x00000000bfc045c8                iic_test
+                0x00000000bfc03d24                infrared_test
+                0x00000000bfc034b8                disable_timer
+                0x00000000bfc0355c                softint_test
+                0x00000000bfc044c8                eeprom_test
+                0x00000000bfc03ae8                adc_test
+                0x00000000bfc04aa4                batfail_test
+                0x00000000bfc032ec                clock_test
+ .text          0x00000000bfc04d30      0xff0 lib/\lib1dtest.a(i2c-test.o)
+                0x00000000bfc04d30                IIC_test_cycle
+                0x00000000bfc05720                eeprom_test_cycle
+                0x00000000bfc04fa8                ls1d_iic_test
+ .text          0x00000000bfc05d20      0x510 lib/\lib1dtest.a(exint.o)
+                0x00000000bfc05d20                ls1d_exint_test
+ .text          0x00000000bfc06230      0x9d0 lib/\lib1dtest.a(cmdline.o)
+                0x00000000bfc06230                do_exit
+                0x00000000bfc06278                do_help
+                0x00000000bfc06254                do_nothing
+                0x00000000bfc06540                cmdline
+ .text          0x00000000bfc06c00       0x90 lib/\lib1dtest.a(batfail.o)
+                0x00000000bfc06c00                ls1d_batfail_test
+ .text          0x00000000bfc06c90      0x2d0 lib/\lib1dtest.a(tdc-test.o)
+                0x00000000bfc06c90                tdc_test
+ .text          0x00000000bfc06f60       0xc0 lib/\lib1dfunc.a(temp_flow.o)
+                0x00000000bfc06f60                time_to_flow
+                0x00000000bfc06f9c                time_to_temp
+ .text          0x00000000bfc07020      0x1a0 lib/\lib1dfunc.a(adc.o)
+                0x00000000bfc07020                ls1d_ADC_MEASURE
+ .text          0x00000000bfc071c0      0x4a0 lib/\lib1dfunc.a(I2C.o)
+                0x00000000bfc07390                ls1d_IIC_write_addr
+                0x00000000bfc075d0                ls1d_IIC_read_stop
+                0x00000000bfc074e4                ls1d_IIC_write_data_stop
+                0x00000000bfc0746c                ls1d_IIC_write_data
+                0x00000000bfc0755c                ls1d_IIC_read
+                0x00000000bfc072a8                ls1d_IIC_slave_init
+                0x00000000bfc071c0                ls1d_IIC_master_init
+ .text          0x00000000bfc07660      0x130 lib/\lib1dfunc.a(isp.o)
+                0x00000000bfc07740                now
+                0x00000000bfc07660                tgt_putchar
+                0x00000000bfc076b4                tgt_getchar
+                0x00000000bfc07704                tgt_testchar
+ .text          0x00000000bfc07790     0x1fc0 lib/\lib1dfunc.a(tdc.o)
+                0x00000000bfc07a78                ls1d_tdc_start
+                0x00000000bfc079c0                Tdc_mop
+                0x00000000bfc07790                ls1d_InitTdc
+                0x00000000bfc07924                ls1d_tdc_select
+                0x00000000bfc09414                res_ready
+ .text          0x00000000bfc09750      0x1c0 lib/\lib1dfunc.a(key.o)
+                0x00000000bfc0988c                ls1d_key_close
+                0x00000000bfc09800                ls1d_key_debug
+                0x00000000bfc09750                ls1d_key_open
+ .text          0x00000000bfc09910      0x380 lib/\lib1dfunc.a(flash.o)
+                0x00000000bfc09a70                Flash_Write
+                0x00000000bfc099c4                Flash_Erase
+ .text          0x00000000bfc09c90      0x840 lib/\lib1dfunc.a(Interrupt.o)
+                0x00000000bfc09f40                INTC
+                0x00000000bfc09d00                TIMER1_INT
+                0x00000000bfc0a3b4                ls1d_timer_init
+                0x00000000bfc0a1d4                Schedule
+                0x00000000bfc0a2e8                ls1d_waker_init
+                0x00000000bfc09e70                BAT_FAIL
+                0x00000000bfc09ed0                RES_VALID
+                0x00000000bfc09e18                KEY_INT
+                0x00000000bfc0a40c                ls1d_disable_timer
+                0x00000000bfc09d7c                WAKER_INT
+                0x00000000bfc09cbc                SOFT_INT
+                0x00000000bfc0a240                IRQ_Exception
+                0x00000000bfc0a49c                ls1d_set_soft_int
+                0x00000000bfc0a198                EXINT
+ .text          0x00000000bfc0a4d0      0x100 lib/\lib1dfunc.a(sleep.o)
+                0x00000000bfc0a4d0                ls1d_sleep
+                0x00000000bfc0a5a8                Check_Data
+ .text          0x00000000bfc0a5d0      0x170 lib/\lib1dfunc.a(flash-sf.o)
+                0x00000000bfc0a6bc                ls1d_flash_verify
+                0x00000000bfc0a5d0                ls1d_flash_boundary
+                0x00000000bfc0a63c                ls1d_flash_encrypt
+ .text          0x00000000bfc0a740      0x530 lib/\lib1dfunc.a(uart.o)
+                0x00000000bfc0a890                Uart1_38400B
+                0x00000000bfc0aa48                Uart0_2400B
+                0x00000000bfc0a740                Uart1_2400B
+                0x00000000bfc0a96c                IrSend
+                0x00000000bfc0ab90                Uart0_38400B
+ .text          0x00000000bfc0ac70      0x2f0 lib/\lib1dfunc.a(lcd.o)
+                0x00000000bfc0adc8                LcdPrintAll
+                0x00000000bfc0ae98                Lcd_HW_Init
+                0x00000000bfc0ae28                WriteLcdRegs
+                0x00000000bfc0acf0                ls1d_lcd_powerdown
+                0x00000000bfc0ac70                ls1d_lcd_poweron
+                0x00000000bfc0ad6c                LcdClear
+ .text          0x00000000bfc0af60      0xa20 lib/\lib1dfunc.a(public.o)
+                0x00000000bfc0b410                my1d_delay
+                0x00000000bfc0b460                UintToBcd
+                0x00000000bfc0b178                str2num
+                0x00000000bfc0af60                printf_float
+                0x00000000bfc0b7ec                set_pulse
+                0x00000000bfc0b90c                clear_pulse
+ .text          0x00000000bfc0b980      0x190 lib/\lib1dfunc.a(watchdog.o)
+                0x00000000bfc0ba14                ls1d_wdt_feed
+                0x00000000bfc0b980                ls1d_wdt_set
+                0x00000000bfc0ba88                ls1d_wdt_disable
+ .text          0x00000000bfc0bb10       0x80 lib/\libtinyc.a(memset.o)
+                0x00000000bfc0bb10                memset
+ .text          0x00000000bfc0bb90      0x120 lib/\libtinyc.a(memcpy.o)
+                0x00000000bfc0bb90                memcpy
+ .text          0x00000000bfc0bcb0       0xa0 lib/\libtinyc.a(puts.o)
+                0x00000000bfc0bcb0                puts
+ .text          0x00000000bfc0bd50       0xc0 lib/\libtinyc.a(strcmp.o)
+                0x00000000bfc0bd50                strcmp
+ .text          0x00000000bfc0be10      0x3f0 lib/\libtinyc.a(printf.o)
+                0x00000000bfc0be10                printf
+ .text          0x00000000bfc0c200       0x50 lib/\libtinyc.a(putchar.o)
+                0x00000000bfc0c200                putchar
+ .text          0x00000000bfc0c250      0x1b0 lib/\libtinyc.a(printbase.o)
+                0x00000000bfc0c250                printbase
+
+.rel.dyn        0x00000000bfc0c400        0x0
+ .rel.dyn       0x0000000000000000        0x0 lib/\lib1dtest.a(cmdline.o)
+                0x00000000bfc0c400                . = ALIGN (0x4)
+
+.rel.text
+ *(.rel.text)
+                0x00000000bfc0c400                . = ALIGN (0x4)
+
+.rodata         0x00000000bfc0c400     0x13f0
+ *(.rodata)
+ .rodata        0x00000000bfc0c400       0x40 main.o
+ .rodata        0x00000000bfc0c440       0x20 .\libuser.a(sysinit.o)
+ .rodata        0x00000000bfc0c460      0x180 .\libuser.a(board.o)
+                0x00000000bfc0c460                LCD_NUMBER
+                0x00000000bfc0c46c                LCD_WORD
+ .rodata        0x00000000bfc0c5e0       0x30 lib/\lib1dtest.a(Calendar.o)
+ .rodata        0x00000000bfc0c610       0x40 lib/\lib1dtest.a(lcd-test.o)
+ .rodata        0x00000000bfc0c650      0x400 lib/\lib1dtest.a(cmd.o)
+ .rodata        0x00000000bfc0ca50      0x1d0 lib/\lib1dtest.a(i2c-test.o)
+ .rodata        0x00000000bfc0cc20      0x170 lib/\lib1dtest.a(exint.o)
+ .rodata        0x00000000bfc0cd90      0x610 lib/\lib1dtest.a(cmdline.o)
+ .rodata        0x00000000bfc0d3a0       0x30 lib/\lib1dtest.a(batfail.o)
+ .rodata        0x00000000bfc0d3d0      0x200 lib/\lib1dtest.a(tdc-test.o)
+ .rodata        0x00000000bfc0d5d0       0x10 lib/\lib1dfunc.a(temp_flow.o)
+ .rodata        0x00000000bfc0d5e0       0x60 lib/\lib1dfunc.a(tdc.o)
+ .rodata        0x00000000bfc0d640       0x10 lib/\lib1dfunc.a(Interrupt.o)
+ .rodata        0x00000000bfc0d650       0x50 lib/\lib1dfunc.a(public.o)
+ .rodata        0x00000000bfc0d6a0      0x150 lib/\libtinyc.a(printf.o)
+                0x00000000bfc0d7f0                . = ALIGN (0x4)
+
+.data           0x00000000bfc0d7f0      0x230
+ *(.data)
+ .data          0x00000000bfc0d7f0        0x0 start.o
+ .data          0x00000000bfc0d7f0        0x0 main.o
+ .data          0x00000000bfc0d7f0        0x0 .\libuser.a(sysinit.o)
+ .data          0x00000000bfc0d7f0        0x0 .\libuser.a(board.o)
+ .data          0x00000000bfc0d7f0        0x0 lib/\lib1dtest.a(Calendar.o)
+ .data          0x00000000bfc0d7f0        0x0 lib/\lib1dtest.a(lcd-test.o)
+ .data          0x00000000bfc0d7f0        0x0 lib/\lib1dtest.a(cmd.o)
+ .data          0x00000000bfc0d7f0        0x0 lib/\lib1dtest.a(i2c-test.o)
+ .data          0x00000000bfc0d7f0        0x0 lib/\lib1dtest.a(exint.o)
+ .data          0x00000000bfc0d7f0      0x200 lib/\lib1dtest.a(cmdline.o)
+                0x00000000bfc0d7f0                cmd
+ .data          0x00000000bfc0d9f0        0x0 lib/\lib1dtest.a(batfail.o)
+ .data          0x00000000bfc0d9f0        0x0 lib/\lib1dtest.a(tdc-test.o)
+ .data          0x00000000bfc0d9f0        0x0 lib/\lib1dfunc.a(temp_flow.o)
+ .data          0x00000000bfc0d9f0        0x0 lib/\lib1dfunc.a(adc.o)
+ .data          0x00000000bfc0d9f0        0x0 lib/\lib1dfunc.a(I2C.o)
+ .data          0x00000000bfc0d9f0        0x0 lib/\lib1dfunc.a(isp.o)
+ .data          0x00000000bfc0d9f0       0x10 lib/\lib1dfunc.a(tdc.o)
+                0x00000000bfc0d9f8                Thsens
+                0x00000000bfc0d9f4                Sonar
+                0x00000000bfc0d9f0                PMU
+ .data          0x00000000bfc0da00        0x0 lib/\lib1dfunc.a(key.o)
+ .data          0x00000000bfc0da00        0x0 lib/\lib1dfunc.a(flash.o)
+ .data          0x00000000bfc0da00       0x20 lib/\lib1dfunc.a(Interrupt.o)
+                0x00000000bfc0da00                MY_INT
+ .data          0x00000000bfc0da20        0x0 lib/\lib1dfunc.a(sleep.o)
+ .data          0x00000000bfc0da20        0x0 lib/\lib1dfunc.a(flash-sf.o)
+ .data          0x00000000bfc0da20        0x0 lib/\lib1dfunc.a(uart.o)
+ .data          0x00000000bfc0da20        0x0 lib/\lib1dfunc.a(lcd.o)
+ .data          0x00000000bfc0da20        0x0 lib/\lib1dfunc.a(public.o)
+ .data          0x00000000bfc0da20        0x0 lib/\lib1dfunc.a(watchdog.o)
+ .data          0x00000000bfc0da20        0x0 lib/\libtinyc.a(memset.o)
+ .data          0x00000000bfc0da20        0x0 lib/\libtinyc.a(memcpy.o)
+ .data          0x00000000bfc0da20        0x0 lib/\libtinyc.a(puts.o)
+ .data          0x00000000bfc0da20        0x0 lib/\libtinyc.a(strcmp.o)
+ .data          0x00000000bfc0da20        0x0 lib/\libtinyc.a(printf.o)
+ .data          0x00000000bfc0da20        0x0 lib/\libtinyc.a(putchar.o)
+ .data          0x00000000bfc0da20        0x0 lib/\libtinyc.a(printbase.o)
+                0x00000000bfc0da20                . = ALIGN (0x4)
+
+.reginfo        0x00000000bfc0da20       0x18
+ *(.reginfo)
+ .reginfo       0x00000000bfc0da20       0x18 start.o
+                0x00000000bfc0da38                . = ALIGN (0x4)
+
+.ptr
+ *(.ptr)
+                0x00000000bfc0da38                . = ALIGN (0x4)
+
+.shstrtab
+ *(.shstrtab)
+                0x00000000bfc0da38                . = ALIGN (0x4)
+
+.strtab
+ *(.strtab)
+                0x00000000a0001000                . = 0xa0001000
+                0x00000000a0001000                . = ALIGN (0x4)
+
+.sbss
+ *(.sbss)
+
+.bss            0x00000000a0001000      0x258
+ *(.bss)
+ .bss           0x00000000a0001000        0x0 start.o
+ .bss           0x00000000a0001000        0x0 main.o
+ .bss           0x00000000a0001000        0x0 .\libuser.a(sysinit.o)
+ .bss           0x00000000a0001000       0x10 .\libuser.a(board.o)
+ .bss           0x00000000a0001010        0x0 lib/\lib1dtest.a(Calendar.o)
+ .bss           0x00000000a0001010       0x20 lib/\lib1dtest.a(lcd-test.o)
+ .bss           0x00000000a0001030        0x0 lib/\lib1dtest.a(cmd.o)
+ .bss           0x00000000a0001030        0x0 lib/\lib1dtest.a(i2c-test.o)
+ .bss           0x00000000a0001030        0x0 lib/\lib1dtest.a(exint.o)
+ .bss           0x00000000a0001030        0x0 lib/\lib1dtest.a(cmdline.o)
+ .bss           0x00000000a0001030        0x0 lib/\lib1dtest.a(batfail.o)
+ .bss           0x00000000a0001030        0x0 lib/\lib1dtest.a(tdc-test.o)
+ .bss           0x00000000a0001030        0x0 lib/\lib1dfunc.a(temp_flow.o)
+ .bss           0x00000000a0001030        0x0 lib/\lib1dfunc.a(adc.o)
+ .bss           0x00000000a0001030        0x0 lib/\lib1dfunc.a(I2C.o)
+ .bss           0x00000000a0001030        0x0 lib/\lib1dfunc.a(isp.o)
+ .bss           0x00000000a0001030        0x0 lib/\lib1dfunc.a(tdc.o)
+ .bss           0x00000000a0001030        0x0 lib/\lib1dfunc.a(key.o)
+ .bss           0x00000000a0001030        0x0 lib/\lib1dfunc.a(flash.o)
+ .bss           0x00000000a0001030        0x0 lib/\lib1dfunc.a(Interrupt.o)
+ .bss           0x00000000a0001030        0x0 lib/\lib1dfunc.a(sleep.o)
+ .bss           0x00000000a0001030        0x0 lib/\lib1dfunc.a(flash-sf.o)
+ .bss           0x00000000a0001030        0x0 lib/\lib1dfunc.a(uart.o)
+ .bss           0x00000000a0001030        0x0 lib/\lib1dfunc.a(lcd.o)
+ .bss           0x00000000a0001030        0x0 lib/\lib1dfunc.a(public.o)
+ .bss           0x00000000a0001030        0x0 lib/\lib1dfunc.a(watchdog.o)
+ .bss           0x00000000a0001030        0x0 lib/\libtinyc.a(memset.o)
+ .bss           0x00000000a0001030        0x0 lib/\libtinyc.a(memcpy.o)
+ .bss           0x00000000a0001030        0x0 lib/\libtinyc.a(puts.o)
+ .bss           0x00000000a0001030        0x0 lib/\libtinyc.a(strcmp.o)
+ .bss           0x00000000a0001030        0x0 lib/\libtinyc.a(printf.o)
+ .bss           0x00000000a0001030        0x0 lib/\libtinyc.a(putchar.o)
+ .bss           0x00000000a0001030        0x0 lib/\libtinyc.a(printbase.o)
+                0x00000000a0001030                . = ALIGN (0x4)
+ COMMON         0x00000000a0001030      0x228 main.o
+                0x00000000a0001030                TEST
+                0x00000000a0001150                LS1D
+Address of section .text set to 0xbfc00000
+LOAD start.o
+LOAD main.o
+LOAD .\libuser.a
+LOAD lib/\lib1dtest.a
+LOAD lib/\lib1dfunc.a
+LOAD lib/\libtinyc.a
+OUTPUT(demo elf32-tradlittlemips)
+
+.scommon        0x00000000a0001258        0x4
+ .scommon       0x00000000a0001258        0x4 .\libuser.a(sysinit.o)
+                0x00000000a0001258                DEBUG
+
+.pdr            0x0000000000000000     0x1220
+ .pdr           0x0000000000000000        0x0 start.o
+ .pdr           0x0000000000000000       0x20 main.o
+ .pdr           0x0000000000000020       0x20 .\libuser.a(sysinit.o)
+ .pdr           0x0000000000000040      0x1c0 .\libuser.a(board.o)
+ .pdr           0x0000000000000200      0x100 lib/\lib1dtest.a(Calendar.o)
+ .pdr           0x0000000000000300       0x80 lib/\lib1dtest.a(lcd-test.o)
+ .pdr           0x0000000000000380      0x2a0 lib/\lib1dtest.a(cmd.o)
+ .pdr           0x0000000000000620       0xa0 lib/\lib1dtest.a(i2c-test.o)
+ .pdr           0x00000000000006c0       0x20 lib/\lib1dtest.a(exint.o)
+ .pdr           0x00000000000006e0       0x80 lib/\lib1dtest.a(cmdline.o)
+ .pdr           0x0000000000000760       0x20 lib/\lib1dtest.a(batfail.o)
+ .pdr           0x0000000000000780       0x20 lib/\lib1dtest.a(tdc-test.o)
+ .pdr           0x00000000000007a0       0x40 lib/\lib1dfunc.a(temp_flow.o)
+ .pdr           0x00000000000007e0       0x20 lib/\lib1dfunc.a(adc.o)
+ .pdr           0x0000000000000800       0xe0 lib/\lib1dfunc.a(I2C.o)
+ .pdr           0x00000000000008e0       0x80 lib/\lib1dfunc.a(isp.o)
+ .pdr           0x0000000000000960      0x220 lib/\lib1dfunc.a(tdc.o)
+ .pdr           0x0000000000000b80       0x60 lib/\lib1dfunc.a(key.o)
+ .pdr           0x0000000000000be0       0x60 lib/\lib1dfunc.a(flash.o)
+ .pdr           0x0000000000000c40      0x1e0 lib/\lib1dfunc.a(Interrupt.o)
+ .pdr           0x0000000000000e20       0x40 lib/\lib1dfunc.a(sleep.o)
+ .pdr           0x0000000000000e60       0x60 lib/\lib1dfunc.a(flash-sf.o)
+ .pdr           0x0000000000000ec0       0xa0 lib/\lib1dfunc.a(uart.o)
+ .pdr           0x0000000000000f60       0xc0 lib/\lib1dfunc.a(lcd.o)
+ .pdr           0x0000000000001020       0xc0 lib/\lib1dfunc.a(public.o)
+ .pdr           0x00000000000010e0       0x60 lib/\lib1dfunc.a(watchdog.o)
+ .pdr           0x0000000000001140       0x20 lib/\libtinyc.a(memset.o)
+ .pdr           0x0000000000001160       0x20 lib/\libtinyc.a(memcpy.o)
+ .pdr           0x0000000000001180       0x20 lib/\libtinyc.a(puts.o)
+ .pdr           0x00000000000011a0       0x20 lib/\libtinyc.a(strcmp.o)
+ .pdr           0x00000000000011c0       0x20 lib/\libtinyc.a(printf.o)
+ .pdr           0x00000000000011e0       0x20 lib/\libtinyc.a(putchar.o)
+ .pdr           0x0000000000001200       0x20 lib/\libtinyc.a(printbase.o)
+
+.mdebug.abi32   0x0000000000000000        0x0
+ .mdebug.abi32  0x0000000000000000        0x0 main.o
+ .mdebug.abi32  0x0000000000000000        0x0 .\libuser.a(sysinit.o)
+ .mdebug.abi32  0x0000000000000000        0x0 .\libuser.a(board.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\lib1dtest.a(Calendar.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\lib1dtest.a(lcd-test.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\lib1dtest.a(cmd.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\lib1dtest.a(i2c-test.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\lib1dtest.a(exint.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\lib1dtest.a(cmdline.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\lib1dtest.a(batfail.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\lib1dtest.a(tdc-test.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\lib1dfunc.a(temp_flow.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\lib1dfunc.a(adc.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\lib1dfunc.a(I2C.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\lib1dfunc.a(isp.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\lib1dfunc.a(tdc.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\lib1dfunc.a(key.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\lib1dfunc.a(flash.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\lib1dfunc.a(Interrupt.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\lib1dfunc.a(sleep.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\lib1dfunc.a(flash-sf.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\lib1dfunc.a(uart.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\lib1dfunc.a(lcd.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\lib1dfunc.a(public.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\lib1dfunc.a(watchdog.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\libtinyc.a(memset.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\libtinyc.a(memcpy.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\libtinyc.a(puts.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\libtinyc.a(strcmp.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\libtinyc.a(printf.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\libtinyc.a(putchar.o)
+ .mdebug.abi32  0x0000000000000000        0x0 lib/\libtinyc.a(printbase.o)
+
+.comment        0x0000000000000000      0x500
+ .comment       0x0000000000000000       0x28 main.o
+ .comment       0x0000000000000028       0x28 .\libuser.a(sysinit.o)
+ .comment       0x0000000000000050       0x28 .\libuser.a(board.o)
+ .comment       0x0000000000000078       0x28 lib/\lib1dtest.a(Calendar.o)
+ .comment       0x00000000000000a0       0x28 lib/\lib1dtest.a(lcd-test.o)
+ .comment       0x00000000000000c8       0x28 lib/\lib1dtest.a(cmd.o)
+ .comment       0x00000000000000f0       0x28 lib/\lib1dtest.a(i2c-test.o)
+ .comment       0x0000000000000118       0x28 lib/\lib1dtest.a(exint.o)
+ .comment       0x0000000000000140       0x28 lib/\lib1dtest.a(cmdline.o)
+ .comment       0x0000000000000168       0x28 lib/\lib1dtest.a(batfail.o)
+ .comment       0x0000000000000190       0x28 lib/\lib1dtest.a(tdc-test.o)
+ .comment       0x00000000000001b8       0x28 lib/\lib1dfunc.a(temp_flow.o)
+ .comment       0x00000000000001e0       0x28 lib/\lib1dfunc.a(adc.o)
+ .comment       0x0000000000000208       0x28 lib/\lib1dfunc.a(I2C.o)
+ .comment       0x0000000000000230       0x28 lib/\lib1dfunc.a(isp.o)
+ .comment       0x0000000000000258       0x28 lib/\lib1dfunc.a(tdc.o)
+ .comment       0x0000000000000280       0x28 lib/\lib1dfunc.a(key.o)
+ .comment       0x00000000000002a8       0x28 lib/\lib1dfunc.a(flash.o)
+ .comment       0x00000000000002d0       0x28 lib/\lib1dfunc.a(Interrupt.o)
+ .comment       0x00000000000002f8       0x28 lib/\lib1dfunc.a(sleep.o)
+ .comment       0x0000000000000320       0x28 lib/\lib1dfunc.a(flash-sf.o)
+ .comment       0x0000000000000348       0x28 lib/\lib1dfunc.a(uart.o)
+ .comment       0x0000000000000370       0x28 lib/\lib1dfunc.a(lcd.o)
+ .comment       0x0000000000000398       0x28 lib/\lib1dfunc.a(public.o)
+ .comment       0x00000000000003c0       0x28 lib/\lib1dfunc.a(watchdog.o)
+ .comment       0x00000000000003e8       0x28 lib/\libtinyc.a(memset.o)
+ .comment       0x0000000000000410       0x28 lib/\libtinyc.a(memcpy.o)
+ .comment       0x0000000000000438       0x28 lib/\libtinyc.a(puts.o)
+ .comment       0x0000000000000460       0x28 lib/\libtinyc.a(strcmp.o)
+ .comment       0x0000000000000488       0x28 lib/\libtinyc.a(printf.o)
+ .comment       0x00000000000004b0       0x28 lib/\libtinyc.a(putchar.o)
+ .comment       0x00000000000004d8       0x28 lib/\libtinyc.a(printbase.o)
+
+.gnu.attributes
+                0x0000000000000000       0x10
+ .gnu.attributes
+                0x0000000000000000       0x10 main.o
+ .gnu.attributes
+                0x0000000000000010       0x10 .\libuser.a(sysinit.o)
+ .gnu.attributes
+                0x0000000000000020       0x10 .\libuser.a(board.o)
+ .gnu.attributes
+                0x0000000000000030       0x10 lib/\lib1dtest.a(Calendar.o)
+ .gnu.attributes
+                0x0000000000000040       0x10 lib/\lib1dtest.a(lcd-test.o)
+ .gnu.attributes
+                0x0000000000000050       0x10 lib/\lib1dtest.a(cmd.o)
+ .gnu.attributes
+                0x0000000000000060       0x10 lib/\lib1dtest.a(i2c-test.o)
+ .gnu.attributes
+                0x0000000000000070       0x10 lib/\lib1dtest.a(exint.o)
+ .gnu.attributes
+                0x0000000000000080       0x10 lib/\lib1dtest.a(cmdline.o)
+ .gnu.attributes
+                0x0000000000000090       0x10 lib/\lib1dtest.a(batfail.o)
+ .gnu.attributes
+                0x00000000000000a0       0x10 lib/\lib1dtest.a(tdc-test.o)
+ .gnu.attributes
+                0x00000000000000b0       0x10 lib/\lib1dfunc.a(temp_flow.o)
+ .gnu.attributes
+                0x00000000000000c0       0x10 lib/\lib1dfunc.a(adc.o)
+ .gnu.attributes
+                0x00000000000000d0       0x10 lib/\lib1dfunc.a(I2C.o)
+ .gnu.attributes
+                0x00000000000000e0       0x10 lib/\lib1dfunc.a(isp.o)
+ .gnu.attributes
+                0x00000000000000f0       0x10 lib/\lib1dfunc.a(tdc.o)
+ .gnu.attributes
+                0x0000000000000100       0x10 lib/\lib1dfunc.a(key.o)
+ .gnu.attributes
+                0x0000000000000110       0x10 lib/\lib1dfunc.a(flash.o)
+ .gnu.attributes
+                0x0000000000000120       0x10 lib/\lib1dfunc.a(Interrupt.o)
+ .gnu.attributes
+                0x0000000000000130       0x10 lib/\lib1dfunc.a(sleep.o)
+ .gnu.attributes
+                0x0000000000000140       0x10 lib/\lib1dfunc.a(flash-sf.o)
+ .gnu.attributes
+                0x0000000000000150       0x10 lib/\lib1dfunc.a(uart.o)
+ .gnu.attributes
+                0x0000000000000160       0x10 lib/\lib1dfunc.a(lcd.o)
+ .gnu.attributes
+                0x0000000000000170       0x10 lib/\lib1dfunc.a(public.o)
+ .gnu.attributes
+                0x0000000000000180       0x10 lib/\lib1dfunc.a(watchdog.o)
+ .gnu.attributes
+                0x0000000000000190       0x10 lib/\libtinyc.a(memset.o)
+ .gnu.attributes
+                0x00000000000001a0       0x10 lib/\libtinyc.a(memcpy.o)
+ .gnu.attributes
+                0x00000000000001b0       0x10 lib/\libtinyc.a(puts.o)
+ .gnu.attributes
+                0x00000000000001c0       0x10 lib/\libtinyc.a(strcmp.o)
+ .gnu.attributes
+                0x00000000000001d0       0x10 lib/\libtinyc.a(printf.o)
+ .gnu.attributes
+                0x00000000000001e0       0x10 lib/\libtinyc.a(putchar.o)
+ .gnu.attributes
+                0x00000000000001f0       0x10 lib/\libtinyc.a(printbase.o)
+
+.debug_line     0x0000000000000000     0x19a6
+ .debug_line    0x0000000000000000       0x8b start.o
+ .debug_line    0x000000000000008b       0xac main.o
+ .debug_line    0x0000000000000137      0x123 .\libuser.a(sysinit.o)
+ .debug_line    0x000000000000025a      0x1cf .\libuser.a(board.o)
+ .debug_line    0x0000000000000429       0xe1 lib/\lib1dtest.a(Calendar.o)
+ .debug_line    0x000000000000050a      0x101 lib/\lib1dtest.a(lcd-test.o)
+ .debug_line    0x000000000000060b      0x2f1 lib/\lib1dtest.a(cmd.o)
+ .debug_line    0x00000000000008fc      0x184 lib/\lib1dtest.a(i2c-test.o)
+ .debug_line    0x0000000000000a80       0xb7 lib/\lib1dtest.a(exint.o)
+ .debug_line    0x0000000000000b37      0x110 lib/\lib1dtest.a(cmdline.o)
+ .debug_line    0x0000000000000c47       0x9a lib/\lib1dtest.a(batfail.o)
+ .debug_line    0x0000000000000ce1       0xc1 lib/\lib1dtest.a(tdc-test.o)
+ .debug_line    0x0000000000000da2       0x60 lib/\lib1dfunc.a(temp_flow.o)
+ .debug_line    0x0000000000000e02       0x6d lib/\lib1dfunc.a(adc.o)
+ .debug_line    0x0000000000000e6f       0xa3 lib/\lib1dfunc.a(I2C.o)
+ .debug_line    0x0000000000000f12       0x66 lib/\lib1dfunc.a(isp.o)
+ .debug_line    0x0000000000000f78      0x26b lib/\lib1dfunc.a(tdc.o)
+ .debug_line    0x00000000000011e3       0x70 lib/\lib1dfunc.a(key.o)
+ .debug_line    0x0000000000001253       0x98 lib/\lib1dfunc.a(flash.o)
+ .debug_line    0x00000000000012eb      0x117 lib/\lib1dfunc.a(Interrupt.o)
+ .debug_line    0x0000000000001402       0x61 lib/\lib1dfunc.a(sleep.o)
+ .debug_line    0x0000000000001463       0x6f lib/\lib1dfunc.a(flash-sf.o)
+ .debug_line    0x00000000000014d2       0xb3 lib/\lib1dfunc.a(uart.o)
+ .debug_line    0x0000000000001585       0x89 lib/\lib1dfunc.a(lcd.o)
+ .debug_line    0x000000000000160e      0x103 lib/\lib1dfunc.a(public.o)
+ .debug_line    0x0000000000001711       0x71 lib/\lib1dfunc.a(watchdog.o)
+ .debug_line    0x0000000000001782       0x3e lib/\libtinyc.a(memset.o)
+ .debug_line    0x00000000000017c0       0x4b lib/\libtinyc.a(memcpy.o)
+ .debug_line    0x000000000000180b       0x3f lib/\libtinyc.a(puts.o)
+ .debug_line    0x000000000000184a       0x42 lib/\libtinyc.a(strcmp.o)
+ .debug_line    0x000000000000188c       0x89 lib/\libtinyc.a(printf.o)
+ .debug_line    0x0000000000001915       0x3c lib/\libtinyc.a(putchar.o)
+ .debug_line    0x0000000000001951       0x55 lib/\libtinyc.a(printbase.o)
+
+.debug_info     0x0000000000000000     0x8353
+ .debug_info    0x0000000000000000       0x67 start.o
+ .debug_info    0x0000000000000067      0xb16 main.o
+ .debug_info    0x0000000000000b7d      0xb48 .\libuser.a(sysinit.o)
+ .debug_info    0x00000000000016c5      0xe11 .\libuser.a(board.o)
+ .debug_info    0x00000000000024d6      0x2ba lib/\lib1dtest.a(Calendar.o)
+ .debug_info    0x0000000000002790      0x945 lib/\lib1dtest.a(lcd-test.o)
+ .debug_info    0x00000000000030d5     0x107c lib/\lib1dtest.a(cmd.o)
+ .debug_info    0x0000000000004151      0xaa1 lib/\lib1dtest.a(i2c-test.o)
+ .debug_info    0x0000000000004bf2       0x9d lib/\lib1dtest.a(exint.o)
+ .debug_info    0x0000000000004c8f      0x2df lib/\lib1dtest.a(cmdline.o)
+ .debug_info    0x0000000000004f6e      0x838 lib/\lib1dtest.a(batfail.o)
+ .debug_info    0x00000000000057a6      0x889 lib/\lib1dtest.a(tdc-test.o)
+ .debug_info    0x000000000000602f      0x103 lib/\lib1dfunc.a(temp_flow.o)
+ .debug_info    0x0000000000006132       0xb3 lib/\lib1dfunc.a(adc.o)
+ .debug_info    0x00000000000061e5      0x1c2 lib/\lib1dfunc.a(I2C.o)
+ .debug_info    0x00000000000063a7      0x125 lib/\lib1dfunc.a(isp.o)
+ .debug_info    0x00000000000064cc      0xa26 lib/\lib1dfunc.a(tdc.o)
+ .debug_info    0x0000000000006ef2       0xc0 lib/\lib1dfunc.a(key.o)
+ .debug_info    0x0000000000006fb2      0x1e0 lib/\lib1dfunc.a(flash.o)
+ .debug_info    0x0000000000007192      0x5fc lib/\lib1dfunc.a(Interrupt.o)
+ .debug_info    0x000000000000778e       0xc5 lib/\lib1dfunc.a(sleep.o)
+ .debug_info    0x0000000000007853      0x11b lib/\lib1dfunc.a(flash-sf.o)
+ .debug_info    0x000000000000796e      0x13a lib/\lib1dfunc.a(uart.o)
+ .debug_info    0x0000000000007aa8      0x16e lib/\lib1dfunc.a(lcd.o)
+ .debug_info    0x0000000000007c16      0x23f lib/\lib1dfunc.a(public.o)
+ .debug_info    0x0000000000007e55       0xc1 lib/\lib1dfunc.a(watchdog.o)
+ .debug_info    0x0000000000007f16       0x91 lib/\libtinyc.a(memset.o)
+ .debug_info    0x0000000000007fa7       0xae lib/\libtinyc.a(memcpy.o)
+ .debug_info    0x0000000000008055       0x74 lib/\libtinyc.a(puts.o)
+ .debug_info    0x00000000000080c9       0x7b lib/\libtinyc.a(strcmp.o)
+ .debug_info    0x0000000000008144       0xbd lib/\libtinyc.a(printf.o)
+ .debug_info    0x0000000000008201       0x62 lib/\libtinyc.a(putchar.o)
+ .debug_info    0x0000000000008263       0xf0 lib/\libtinyc.a(printbase.o)
+
+.debug_abbrev   0x0000000000000000     0x1e22
+ .debug_abbrev  0x0000000000000000       0x14 start.o
+ .debug_abbrev  0x0000000000000014      0x135 main.o
+ .debug_abbrev  0x0000000000000149      0x155 .\libuser.a(sysinit.o)
+ .debug_abbrev  0x000000000000029e      0x25f .\libuser.a(board.o)
+ .debug_abbrev  0x00000000000004fd       0xf1 lib/\lib1dtest.a(Calendar.o)
+ .debug_abbrev  0x00000000000005ee      0x199 lib/\lib1dtest.a(lcd-test.o)
+ .debug_abbrev  0x0000000000000787      0x1c3 lib/\lib1dtest.a(cmd.o)
+ .debug_abbrev  0x000000000000094a      0x19f lib/\lib1dtest.a(i2c-test.o)
+ .debug_abbrev  0x0000000000000ae9       0x78 lib/\lib1dtest.a(exint.o)
+ .debug_abbrev  0x0000000000000b61      0x11c lib/\lib1dtest.a(cmdline.o)
+ .debug_abbrev  0x0000000000000c7d      0x144 lib/\lib1dtest.a(batfail.o)
+ .debug_abbrev  0x0000000000000dc1      0x157 lib/\lib1dtest.a(tdc-test.o)
+ .debug_abbrev  0x0000000000000f18       0xb2 lib/\lib1dfunc.a(temp_flow.o)
+ .debug_abbrev  0x0000000000000fca       0x8e lib/\lib1dfunc.a(adc.o)
+ .debug_abbrev  0x0000000000001058       0xc6 lib/\lib1dfunc.a(I2C.o)
+ .debug_abbrev  0x000000000000111e       0xc6 lib/\lib1dfunc.a(isp.o)
+ .debug_abbrev  0x00000000000011e4      0x218 lib/\lib1dfunc.a(tdc.o)
+ .debug_abbrev  0x00000000000013fc       0x7d lib/\lib1dfunc.a(key.o)
+ .debug_abbrev  0x0000000000001479       0xd4 lib/\lib1dfunc.a(flash.o)
+ .debug_abbrev  0x000000000000154d      0x1a7 lib/\lib1dfunc.a(Interrupt.o)
+ .debug_abbrev  0x00000000000016f4       0x7f lib/\lib1dfunc.a(sleep.o)
+ .debug_abbrev  0x0000000000001773       0x94 lib/\lib1dfunc.a(flash-sf.o)
+ .debug_abbrev  0x0000000000001807       0xb5 lib/\lib1dfunc.a(uart.o)
+ .debug_abbrev  0x00000000000018bc       0xb3 lib/\lib1dfunc.a(lcd.o)
+ .debug_abbrev  0x000000000000196f       0xe7 lib/\lib1dfunc.a(public.o)
+ .debug_abbrev  0x0000000000001a56       0x7f lib/\lib1dfunc.a(watchdog.o)
+ .debug_abbrev  0x0000000000001ad5       0x83 lib/\libtinyc.a(memset.o)
+ .debug_abbrev  0x0000000000001b58       0x80 lib/\libtinyc.a(memcpy.o)
+ .debug_abbrev  0x0000000000001bd8       0x6d lib/\libtinyc.a(puts.o)
+ .debug_abbrev  0x0000000000001c45       0x65 lib/\libtinyc.a(strcmp.o)
+ .debug_abbrev  0x0000000000001caa       0x86 lib/\libtinyc.a(printf.o)
+ .debug_abbrev  0x0000000000001d30       0x55 lib/\libtinyc.a(putchar.o)
+ .debug_abbrev  0x0000000000001d85       0x9d lib/\libtinyc.a(printbase.o)
+
+.debug_aranges  0x0000000000000000      0x420
+ .debug_aranges
+                0x0000000000000000       0x20 start.o
+ .debug_aranges
+                0x0000000000000020       0x20 main.o
+ .debug_aranges
+                0x0000000000000040       0x20 .\libuser.a(sysinit.o)
+ .debug_aranges
+                0x0000000000000060       0x20 .\libuser.a(board.o)
+ .debug_aranges
+                0x0000000000000080       0x20 lib/\lib1dtest.a(Calendar.o)
+ .debug_aranges
+                0x00000000000000a0       0x20 lib/\lib1dtest.a(lcd-test.o)
+ .debug_aranges
+                0x00000000000000c0       0x20 lib/\lib1dtest.a(cmd.o)
+ .debug_aranges
+                0x00000000000000e0       0x20 lib/\lib1dtest.a(i2c-test.o)
+ .debug_aranges
+                0x0000000000000100       0x20 lib/\lib1dtest.a(exint.o)
+ .debug_aranges
+                0x0000000000000120       0x20 lib/\lib1dtest.a(cmdline.o)
+ .debug_aranges
+                0x0000000000000140       0x20 lib/\lib1dtest.a(batfail.o)
+ .debug_aranges
+                0x0000000000000160       0x20 lib/\lib1dtest.a(tdc-test.o)
+ .debug_aranges
+                0x0000000000000180       0x20 lib/\lib1dfunc.a(temp_flow.o)
+ .debug_aranges
+                0x00000000000001a0       0x20 lib/\lib1dfunc.a(adc.o)
+ .debug_aranges
+                0x00000000000001c0       0x20 lib/\lib1dfunc.a(I2C.o)
+ .debug_aranges
+                0x00000000000001e0       0x20 lib/\lib1dfunc.a(isp.o)
+ .debug_aranges
+                0x0000000000000200       0x20 lib/\lib1dfunc.a(tdc.o)
+ .debug_aranges
+                0x0000000000000220       0x20 lib/\lib1dfunc.a(key.o)
+ .debug_aranges
+                0x0000000000000240       0x20 lib/\lib1dfunc.a(flash.o)
+ .debug_aranges
+                0x0000000000000260       0x20 lib/\lib1dfunc.a(Interrupt.o)
+ .debug_aranges
+                0x0000000000000280       0x20 lib/\lib1dfunc.a(sleep.o)
+ .debug_aranges
+                0x00000000000002a0       0x20 lib/\lib1dfunc.a(flash-sf.o)
+ .debug_aranges
+                0x00000000000002c0       0x20 lib/\lib1dfunc.a(uart.o)
+ .debug_aranges
+                0x00000000000002e0       0x20 lib/\lib1dfunc.a(lcd.o)
+ .debug_aranges
+                0x0000000000000300       0x20 lib/\lib1dfunc.a(public.o)
+ .debug_aranges
+                0x0000000000000320       0x20 lib/\lib1dfunc.a(watchdog.o)
+ .debug_aranges
+                0x0000000000000340       0x20 lib/\libtinyc.a(memset.o)
+ .debug_aranges
+                0x0000000000000360       0x20 lib/\libtinyc.a(memcpy.o)
+ .debug_aranges
+                0x0000000000000380       0x20 lib/\libtinyc.a(puts.o)
+ .debug_aranges
+                0x00000000000003a0       0x20 lib/\libtinyc.a(strcmp.o)
+ .debug_aranges
+                0x00000000000003c0       0x20 lib/\libtinyc.a(printf.o)
+ .debug_aranges
+                0x00000000000003e0       0x20 lib/\libtinyc.a(putchar.o)
+ .debug_aranges
+                0x0000000000000400       0x20 lib/\libtinyc.a(printbase.o)
+
+.debug_frame    0x0000000000000000     0x1200
+ .debug_frame   0x0000000000000000       0x2c main.o
+ .debug_frame   0x000000000000002c       0x2c .\libuser.a(sysinit.o)
+ .debug_frame   0x0000000000000058      0x198 .\libuser.a(board.o)
+ .debug_frame   0x00000000000001f0       0xf0 lib/\lib1dtest.a(Calendar.o)
+ .debug_frame   0x00000000000002e0       0x80 lib/\lib1dtest.a(lcd-test.o)
+ .debug_frame   0x0000000000000360      0x264 lib/\lib1dtest.a(cmd.o)
+ .debug_frame   0x00000000000005c4       0xa0 lib/\lib1dtest.a(i2c-test.o)
+ .debug_frame   0x0000000000000664       0x2c lib/\lib1dtest.a(exint.o)
+ .debug_frame   0x0000000000000690       0x84 lib/\lib1dtest.a(cmdline.o)
+ .debug_frame   0x0000000000000714       0x2c lib/\lib1dtest.a(batfail.o)
+ .debug_frame   0x0000000000000740       0x2c lib/\lib1dtest.a(tdc-test.o)
+ .debug_frame   0x000000000000076c       0x48 lib/\lib1dfunc.a(temp_flow.o)
+ .debug_frame   0x00000000000007b4       0x2c lib/\lib1dfunc.a(adc.o)
+ .debug_frame   0x00000000000007e0       0xd4 lib/\lib1dfunc.a(I2C.o)
+ .debug_frame   0x00000000000008b4       0x80 lib/\lib1dfunc.a(isp.o)
+ .debug_frame   0x0000000000000934      0x1fc lib/\lib1dfunc.a(tdc.o)
+ .debug_frame   0x0000000000000b30       0x64 lib/\lib1dfunc.a(key.o)
+ .debug_frame   0x0000000000000b94       0x68 lib/\lib1dfunc.a(flash.o)
+ .debug_frame   0x0000000000000bfc      0x1b4 lib/\lib1dfunc.a(Interrupt.o)
+ .debug_frame   0x0000000000000db0       0x48 lib/\lib1dfunc.a(sleep.o)
+ .debug_frame   0x0000000000000df8       0x64 lib/\lib1dfunc.a(flash-sf.o)
+ .debug_frame   0x0000000000000e5c       0x9c lib/\lib1dfunc.a(uart.o)
+ .debug_frame   0x0000000000000ef8       0xb8 lib/\lib1dfunc.a(lcd.o)
+ .debug_frame   0x0000000000000fb0       0xb8 lib/\lib1dfunc.a(public.o)
+ .debug_frame   0x0000000000001068       0x64 lib/\lib1dfunc.a(watchdog.o)
+ .debug_frame   0x00000000000010cc       0x2c lib/\libtinyc.a(memset.o)
+ .debug_frame   0x00000000000010f8       0x2c lib/\libtinyc.a(memcpy.o)
+ .debug_frame   0x0000000000001124       0x2c lib/\libtinyc.a(puts.o)
+ .debug_frame   0x0000000000001150       0x2c lib/\libtinyc.a(strcmp.o)
+ .debug_frame   0x000000000000117c       0x2c lib/\libtinyc.a(printf.o)
+ .debug_frame   0x00000000000011a8       0x2c lib/\libtinyc.a(putchar.o)
+ .debug_frame   0x00000000000011d4       0x2c lib/\libtinyc.a(printbase.o)
+
+.debug_loc      0x0000000000000000     0x1873
+ .debug_loc     0x0000000000000000       0x2b main.o
+ .debug_loc     0x000000000000002b       0x2b .\libuser.a(sysinit.o)
+ .debug_loc     0x0000000000000056      0x25c .\libuser.a(board.o)
+ .debug_loc     0x00000000000002b2      0x158 lib/\lib1dtest.a(Calendar.o)
+ .debug_loc     0x000000000000040a       0xac lib/\lib1dtest.a(lcd-test.o)
+ .debug_loc     0x00000000000004b6      0x389 lib/\lib1dtest.a(cmd.o)
+ .debug_loc     0x000000000000083f       0xd9 lib/\lib1dtest.a(i2c-test.o)
+ .debug_loc     0x0000000000000918       0x2b lib/\lib1dtest.a(exint.o)
+ .debug_loc     0x0000000000000943       0xae lib/\lib1dtest.a(cmdline.o)
+ .debug_loc     0x00000000000009f1       0x2b lib/\lib1dtest.a(batfail.o)
+ .debug_loc     0x0000000000000a1c       0x2d lib/\lib1dtest.a(tdc-test.o)
+ .debug_loc     0x0000000000000a49       0x56 lib/\lib1dfunc.a(temp_flow.o)
+ .debug_loc     0x0000000000000a9f       0x2b lib/\lib1dfunc.a(adc.o)
+ .debug_loc     0x0000000000000aca      0x12d lib/\lib1dfunc.a(I2C.o)
+ .debug_loc     0x0000000000000bf7       0xac lib/\lib1dfunc.a(isp.o)
+ .debug_loc     0x0000000000000ca3      0x2e3 lib/\lib1dfunc.a(tdc.o)
+ .debug_loc     0x0000000000000f86       0x81 lib/\lib1dfunc.a(key.o)
+ .debug_loc     0x0000000000001007       0x83 lib/\lib1dfunc.a(flash.o)
+ .debug_loc     0x000000000000108a      0x285 lib/\lib1dfunc.a(Interrupt.o)
+ .debug_loc     0x000000000000130f       0x56 lib/\lib1dfunc.a(sleep.o)
+ .debug_loc     0x0000000000001365       0x81 lib/\lib1dfunc.a(flash-sf.o)
+ .debug_loc     0x00000000000013e6       0xd7 lib/\lib1dfunc.a(uart.o)
+ .debug_loc     0x00000000000014bd      0x102 lib/\lib1dfunc.a(lcd.o)
+ .debug_loc     0x00000000000015bf      0x104 lib/\lib1dfunc.a(public.o)
+ .debug_loc     0x00000000000016c3       0x81 lib/\lib1dfunc.a(watchdog.o)
+ .debug_loc     0x0000000000001744       0x2b lib/\libtinyc.a(memset.o)
+ .debug_loc     0x000000000000176f       0x2b lib/\libtinyc.a(memcpy.o)
+ .debug_loc     0x000000000000179a       0x2b lib/\libtinyc.a(puts.o)
+ .debug_loc     0x00000000000017c5       0x2b lib/\libtinyc.a(strcmp.o)
+ .debug_loc     0x00000000000017f0       0x2b lib/\libtinyc.a(printf.o)
+ .debug_loc     0x000000000000181b       0x2b lib/\libtinyc.a(putchar.o)
+ .debug_loc     0x0000000000001846       0x2d lib/\libtinyc.a(printbase.o)
+
+.debug_pubnames
+                0x0000000000000000      0xa9c
+ .debug_pubnames
+                0x0000000000000000       0x2d main.o
+ .debug_pubnames
+                0x000000000000002d       0x29 .\libuser.a(sysinit.o)
+ .debug_pubnames
+                0x0000000000000056      0x14f .\libuser.a(board.o)
+ .debug_pubnames
+                0x00000000000001a5       0x63 lib/\lib1dtest.a(Calendar.o)
+ .debug_pubnames
+                0x0000000000000208       0x20 lib/\lib1dtest.a(lcd-test.o)
+ .debug_pubnames
+                0x0000000000000228      0x139 lib/\lib1dtest.a(cmd.o)
+ .debug_pubnames
+                0x0000000000000361       0x4d lib/\lib1dtest.a(i2c-test.o)
+ .debug_pubnames
+                0x00000000000003ae       0x26 lib/\lib1dtest.a(exint.o)
+ .debug_pubnames
+                0x00000000000003d4       0x4d lib/\lib1dtest.a(cmdline.o)
+ .debug_pubnames
+                0x0000000000000421       0x28 lib/\lib1dtest.a(batfail.o)
+ .debug_pubnames
+                0x0000000000000449       0x1f lib/\lib1dtest.a(tdc-test.o)
+ .debug_pubnames
+                0x0000000000000468       0x34 lib/\lib1dfunc.a(temp_flow.o)
+ .debug_pubnames
+                0x000000000000049c       0x27 lib/\lib1dfunc.a(adc.o)
+ .debug_pubnames
+                0x00000000000004c3       0xb9 lib/\lib1dfunc.a(I2C.o)
+ .debug_pubnames
+                0x000000000000057c       0x4b lib/\lib1dfunc.a(isp.o)
+ .debug_pubnames
+                0x00000000000005c7       0x81 lib/\lib1dfunc.a(tdc.o)
+ .debug_pubnames
+                0x0000000000000648       0x4a lib/\lib1dfunc.a(key.o)
+ .debug_pubnames
+                0x0000000000000692       0x32 lib/\lib1dfunc.a(flash.o)
+ .debug_pubnames
+                0x00000000000006c4       0xf5 lib/\lib1dfunc.a(Interrupt.o)
+ .debug_pubnames
+                0x00000000000007b9       0x30 lib/\lib1dfunc.a(sleep.o)
+ .debug_pubnames
+                0x00000000000007e9       0x57 lib/\lib1dfunc.a(flash-sf.o)
+ .debug_pubnames
+                0x0000000000000840       0x5f lib/\lib1dfunc.a(uart.o)
+ .debug_pubnames
+                0x000000000000089f       0x7c lib/\lib1dfunc.a(lcd.o)
+ .debug_pubnames
+                0x000000000000091b       0x6a lib/\lib1dfunc.a(public.o)
+ .debug_pubnames
+                0x0000000000000985       0x4a lib/\lib1dfunc.a(watchdog.o)
+ .debug_pubnames
+                0x00000000000009cf       0x1d lib/\libtinyc.a(memset.o)
+ .debug_pubnames
+                0x00000000000009ec       0x1d lib/\libtinyc.a(memcpy.o)
+ .debug_pubnames
+                0x0000000000000a09       0x1b lib/\libtinyc.a(puts.o)
+ .debug_pubnames
+                0x0000000000000a24       0x1d lib/\libtinyc.a(strcmp.o)
+ .debug_pubnames
+                0x0000000000000a41       0x1d lib/\libtinyc.a(printf.o)
+ .debug_pubnames
+                0x0000000000000a5e       0x1e lib/\libtinyc.a(putchar.o)
+ .debug_pubnames
+                0x0000000000000a7c       0x20 lib/\libtinyc.a(printbase.o)
+
+.debug_str      0x0000000000000000      0xf01
+ .debug_str     0x0000000000000000      0x399 main.o
+                                        0x4a0 (size before relaxing)
+ .debug_str     0x0000000000000399       0x56 .\libuser.a(sysinit.o)
+                                        0x4bf (size before relaxing)
+ .debug_str     0x00000000000003ef      0x12c .\libuser.a(board.o)
+                                        0x5e8 (size before relaxing)
+ .debug_str     0x000000000000051b       0x8f lib/\lib1dtest.a(Calendar.o)
+                                        0x149 (size before relaxing)
+ .debug_str     0x00000000000005aa       0x58 lib/\lib1dtest.a(lcd-test.o)
+                                        0x38a (size before relaxing)
+ .debug_str     0x0000000000000602       0xe4 lib/\lib1dtest.a(cmd.o)
+                                        0x48b (size before relaxing)
+ .debug_str     0x00000000000006e6       0xda lib/\lib1dtest.a(i2c-test.o)
+                                        0x42d (size before relaxing)
+ .debug_str     0x00000000000007c0       0x18 lib/\lib1dtest.a(exint.o)
+                                         0xa2 (size before relaxing)
+ .debug_str     0x00000000000007d8       0x9a lib/\lib1dtest.a(cmdline.o)
+                                        0x12c (size before relaxing)
+ .debug_str     0x0000000000000872       0x1c lib/\lib1dtest.a(batfail.o)
+                                        0x34e (size before relaxing)
+ .debug_str     0x000000000000088e       0x14 lib/\lib1dtest.a(tdc-test.o)
+                                        0x350 (size before relaxing)
+ .debug_str     0x00000000000008a2       0x5d lib/\lib1dfunc.a(temp_flow.o)
+                                         0xbf (size before relaxing)
+ .debug_str     0x00000000000008ff       0x17 lib/\lib1dfunc.a(adc.o)
+                                         0xa3 (size before relaxing)
+ .debug_str     0x0000000000000916       0x96 lib/\lib1dfunc.a(I2C.o)
+                                        0x128 (size before relaxing)
+ .debug_str     0x00000000000009ac       0x2b lib/\lib1dfunc.a(isp.o)
+                                         0xae (size before relaxing)
+ .debug_str     0x00000000000009d7      0x13d lib/\lib1dfunc.a(tdc.o)
+                                        0x362 (size before relaxing)
+ .debug_str     0x0000000000000b14       0x32 lib/\lib1dfunc.a(key.o)
+                                         0xaf (size before relaxing)
+ .debug_str     0x0000000000000b46       0x66 lib/\lib1dfunc.a(flash.o)
+                                         0xf8 (size before relaxing)
+ .debug_str     0x0000000000000bac       0xd5 lib/\lib1dfunc.a(Interrupt.o)
+                                        0x2dc (size before relaxing)
+ .debug_str     0x0000000000000c81       0x3f lib/\lib1dfunc.a(sleep.o)
+                                         0xbc (size before relaxing)
+ .debug_str     0x0000000000000cc0       0x52 lib/\lib1dfunc.a(flash-sf.o)
+                                         0xdf (size before relaxing)
+ .debug_str     0x0000000000000d12       0x40 lib/\lib1dfunc.a(uart.o)
+                                         0xc9 (size before relaxing)
+ .debug_str     0x0000000000000d52       0x58 lib/\lib1dfunc.a(lcd.o)
+                                         0xda (size before relaxing)
+ .debug_str     0x0000000000000daa       0x67 lib/\lib1dfunc.a(public.o)
+                                        0x109 (size before relaxing)
+ .debug_str     0x0000000000000e11       0x37 lib/\lib1dfunc.a(watchdog.o)
+                                         0xb9 (size before relaxing)
+ .debug_str     0x0000000000000e48       0x37 lib/\libtinyc.a(memset.o)
+                                         0x51 (size before relaxing)
+ .debug_str     0x0000000000000e7f       0x10 lib/\libtinyc.a(memcpy.o)
+                                         0x4b (size before relaxing)
+ .debug_str     0x0000000000000e8f        0xc lib/\libtinyc.a(puts.o)
+                                         0x47 (size before relaxing)
+ .debug_str     0x0000000000000e9b       0x10 lib/\libtinyc.a(strcmp.o)
+                                         0x4b (size before relaxing)
+ .debug_str     0x0000000000000eab       0x16 lib/\libtinyc.a(printf.o)
+                                         0x51 (size before relaxing)
+ .debug_str     0x0000000000000ec1       0x13 lib/\libtinyc.a(putchar.o)
+                                         0x51 (size before relaxing)
+ .debug_str     0x0000000000000ed4       0x2d lib/\libtinyc.a(printbase.o)
+                                         0x7c (size before relaxing)
