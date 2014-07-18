@@ -17,7 +17,7 @@ int main()
 
 	Uart1_38400B();
 	INTERRUPT_ENABLE;
-	printf("\n-------------Welcome to LS1D!----------------\n\n");
+	printf("\n------------Welcome to LS1D!---------------\n\n");
 
 	sys_init();
 

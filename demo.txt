@@ -511,7 +511,7 @@ bfc00630:	3409ff01 	li	t1,0xff01
 bfc00634:	01494025 	or	t0,t2,t1
 bfc00638:	40886000 	mtc0	t0,c0_status
 D:\loongson\works\ls1d-demo-public-release/main.c:20
-	printf("\n-------------Welcome to LS1D!----------------\n\n");
+	printf("\n------------Welcome to LS1D!---------------\n\n");
 bfc0063c:	3c02bfc1 	lui	v0,0xbfc1
 bfc00640:	2444c400 	addiu	a0,v0,-15360
 bfc00644:	3c02bfc1 	lui	v0,0xbfc1
